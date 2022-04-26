@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>UI theme Simple Peri</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      .bckBtn {
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        padding: 8px 16px;
+        border-radius: 50%;
+        background-color: #3b394d;
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover.bckBtn {
+        background-color: #555555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Bree Walton</a>
+      <a href="index.html">Work</a>
+      <a href="about.html">About</a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <h1 class="xpg-title">Simple Peri</h1>
+    <div class="bckPg"><a href="index.html" class="bckBtn">&#8249;</a></div>
+
+    <div class="xpg-content">
+      <p>
+        Very Peri was named Pantone's Color of the Year in 2022! I used Very
+        Peri in a monochromatic color scheme to create a Samsung UI theme
+        design, Simple Peri.
+      </p>
+      <div class="xpg-img-container">
+        <img
+          src="https://cdn.glitch.global/30278916-3531-4eab-bfbf-bbd24de76eed/theme_peri-simple-2-100.jpg?v=1649155126906"
+        />
+      </div>
+    </div>
+
+    <script>
+      //Get the button:
+      var mybutton = document.getElementById("topBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>
